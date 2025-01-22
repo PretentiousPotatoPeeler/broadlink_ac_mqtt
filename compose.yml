@@ -1,0 +1,12 @@
+services:
+  ac2mqtt:
+    restart: unless-stopped
+    container_name: ac2mqtt
+    build: .
+    volumes:
+      - ./settings:/config
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "1"

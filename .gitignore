@@ -9,3 +9,4 @@ desktop.ini
 .vscode/*
 env/*
 .devcontainer/*
+venv
